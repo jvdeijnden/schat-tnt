@@ -1,0 +1,473 @@
+{
+    "Id": 2,
+    "RfCode": "805682",
+    "RoomId": 0,
+    "Rooms": [
+        {
+            "DisplayText": "-",
+            "Id": 0
+        },
+        {
+            "DisplayText": "<K102$102$> <K102$102$>",
+            "Id": 61
+        },
+        {
+            "DisplayText": "<K103$103$> <K103$103$>",
+            "Id": 62
+        },
+        {
+            "DisplayText": "<K104$104$> <K104$104$>",
+            "Id": 63
+        },
+        {
+            "DisplayText": "<K105$105$> <K105$105$>",
+            "Id": 64
+        },
+        {
+            "DisplayText": "<K106$106$> <K106$106$>",
+            "Id": 73
+        },
+        {
+            "DisplayText": "<K107$107$> <K107$107$>",
+            "Id": 72
+        },
+        {
+            "DisplayText": "<K108$108$> <K108$108$>",
+            "Id": 75
+        },
+        {
+            "DisplayText": "<K109$109$> <K109$109$>",
+            "Id": 65
+        },
+        {
+            "DisplayText": "<K110$110$> <K110$110$>",
+            "Id": 76
+        },
+        {
+            "DisplayText": "<K111$111$> <K111$111$>",
+            "Id": 66
+        },
+        {
+            "DisplayText": "<K112$112$> <K112$112$>",
+            "Id": 67
+        },
+        {
+            "DisplayText": "<K113$113$> <K113$113$>",
+            "Id": 68
+        },
+        {
+            "DisplayText": "<K114$114$> <K114$114$>",
+            "Id": 69
+        },
+        {
+            "DisplayText": "<K115$115$> <K115$115$>",
+            "Id": 71
+        },
+        {
+            "DisplayText": "<K116$116$> <K116$116$>",
+            "Id": 77
+        },
+        {
+            "DisplayText": "<K117$117$> <K117$117$>",
+            "Id": 70
+        },
+        {
+            "DisplayText": "<K118$118$> <K118$118$>",
+            "Id": 74
+        },
+        {
+            "DisplayText": "<K119$119$> <K119$119$>",
+            "Id": 78
+        },
+        {
+            "DisplayText": "0001 0001",
+            "Id": 1
+        },
+        {
+            "DisplayText": "0002 0002",
+            "Id": 79
+        },
+        {
+            "DisplayText": "0003 0003",
+            "Id": 3
+        },
+        {
+            "DisplayText": "0004 0004",
+            "Id": 4
+        },
+        {
+            "DisplayText": "0005 0005",
+            "Id": 5
+        },
+        {
+            "DisplayText": "0006 0006",
+            "Id": 81
+        },
+        {
+            "DisplayText": "0008 0008",
+            "Id": 100
+        },
+        {
+            "DisplayText": "0009 0009",
+            "Id": 101
+        },
+        {
+            "DisplayText": "99999 0006 (Kopie)",
+            "Id": 95
+        },
+        {
+            "DisplayText": "DWAAL 1 Dwaal 1",
+            "Id": 96
+        },
+        {
+            "DisplayText": "Dwaal 2 Dwaal 2",
+            "Id": 98
+        },
+        {
+            "DisplayText": "Dwaal 3 Dwaal 3",
+            "Id": 97
+        },
+        {
+            "DisplayText": "Dwaal 4 Dwaal 4",
+            "Id": 99
+        },
+        {
+            "DisplayText": "Pa box pa",
+            "Id": 7
+        }
+    ],
+    "PersonId": 0,
+    "Persons": [
+        {
+            "DisplayText": "-",
+            "Id": 0
+        },
+        {
+            "DisplayText": "IAD Peeman",
+            "Id": 15
+        },
+        {
+            "DisplayText": "IAD van Peeman",
+            "Id": 17
+        },
+        {
+            "DisplayText": "Iman",
+            "Id": 18
+        },
+        {
+            "DisplayText": "j van Swieten",
+            "Id": 19
+        },
+        {
+            "DisplayText": "Lunter [5340]",
+            "Id": 10
+        },
+        {
+            "DisplayText": "Pager 1237899",
+            "Id": 5
+        },
+        {
+            "DisplayText": "Pager 302",
+            "Id": 3
+        },
+        {
+            "DisplayText": "Pager 303",
+            "Id": 7
+        },
+        {
+            "DisplayText": "Peeman",
+            "Id": 6
+        },
+        {
+            "DisplayText": "test bewoner",
+            "Id": 4
+        },
+        {
+            "DisplayText": "Toestel 404",
+            "Id": 20
+        },
+        {
+            "DisplayText": "Toestel 405",
+            "Id": 21
+        },
+        {
+            "DisplayText": "Toestel 406",
+            "Id": 22
+        },
+        {
+            "DisplayText": "Toestel 407",
+            "Id": 23
+        },
+        {
+            "DisplayText": "van Zanten [4999]",
+            "Id": 9
+        }
+    ],
+    "RfDeviceTypeId": 2,
+    "RfDeviceTypes": [
+        {
+            "DisplayText": "Bewoner",
+            "Id": 2
+        },
+        {
+            "DisplayText": "Kamer",
+            "Id": 1
+        },
+        {
+            "DisplayText": "Personeel",
+            "Id": 3
+        }
+    ],
+    "RfDeviceProductId": 1,
+    "RfDeviceProducts": [
+        {
+            "DisplayText": "Halszender",
+            "Id": 1
+        },
+        {
+            "DisplayText": "Paddenstoeldrukker",
+            "Id": 6
+        },
+        {
+            "DisplayText": "Polszender",
+            "Id": 3
+        },
+        {
+            "DisplayText": "RfBadtrekker",
+            "Id": 2
+        },
+        {
+            "DisplayText": "Rookmelder",
+            "Id": 4
+        },
+        {
+            "DisplayText": "Valdetectie",
+            "Id": 5
+        }
+    ],
+    "LocationId": 6,
+    "Locations": [
+        {
+            "DisplayText": "Kelder, bouwdeel A",
+            "Id": 1
+        },
+        {
+            "DisplayText": "Kelder, bouwdeel B",
+            "Id": 2
+        },
+        {
+            "DisplayText": "Begane grond, bouwdeel A",
+            "Id": 3
+        },
+        {
+            "DisplayText": "Begane grond, bouwdeel B",
+            "Id": 4
+        },
+        {
+            "DisplayText": "Begane grond, bouwdeel C",
+            "Id": 5
+        },
+        {
+            "DisplayText": "Begane grond, bouwdeel D",
+            "Id": 6
+        },
+        {
+            "DisplayText": "1e verdieping, bouwdeel A",
+            "Id": 7
+        },
+        {
+            "DisplayText": "1e verdieping, bouwdeel B",
+            "Id": 8
+        },
+        {
+            "DisplayText": "1e verdieping, bouwdeel C",
+            "Id": 9
+        },
+        {
+            "DisplayText": "1e verdieping, bouwdeel D",
+            "Id": 10
+        },
+        {
+            "DisplayText": "2e verdieping, bouwdeel A",
+            "Id": 11
+        },
+        {
+            "DisplayText": "2e verdieping, bouwdeel B",
+            "Id": 12
+        },
+        {
+            "DisplayText": "2e verdieping, bouwdeel C",
+            "Id": 13
+        },
+        {
+            "DisplayText": "2e verdieping, bouwdeel D",
+            "Id": 14
+        },
+        {
+            "DisplayText": "3e verdieping, bouwdeel A",
+            "Id": 15
+        },
+        {
+            "DisplayText": "3e verdieping, bouwdeel B",
+            "Id": 16
+        },
+        {
+            "DisplayText": "3e verdieping, bouwdeel C",
+            "Id": 17
+        },
+        {
+            "DisplayText": "3e verdieping, bouwdeel D",
+            "Id": 18
+        },
+        {
+            "DisplayText": "4e verdieping, bouwdeel A",
+            "Id": 19
+        },
+        {
+            "DisplayText": "4e verdieping, bouwdeel B",
+            "Id": 20
+        },
+        {
+            "DisplayText": "4e verdieping, bouwdeel C",
+            "Id": 21
+        },
+        {
+            "DisplayText": "4e verdieping, bouwdeel D",
+            "Id": 22
+        }
+    ],
+    "LocationDetectionEnabled": true,
+    "DeviceCount": 0,
+    "CallTypeId": 0,
+    "CallTypes": [
+        {
+            "DisplayText": "Aanwezig",
+            "Id": 14
+        },
+        {
+            "DisplayText": "Assist.",
+            "Id": 11
+        },
+        {
+            "DisplayText": "Beweging",
+            "Id": 22
+        },
+        {
+            "DisplayText": "Brand",
+            "Id": 27
+        },
+        {
+            "DisplayText": "Deurstand",
+            "Id": 33
+        },
+        {
+            "DisplayText": "Dwaal",
+            "Id": 28
+        },
+        {
+            "DisplayText": "Espainputdefect",
+            "Id": 43
+        },
+        {
+            "DisplayText": "Geluid",
+            "Id": 30
+        },
+        {
+            "DisplayText": "Geluids drempel MS",
+            "Id": 51
+        },
+        {
+            "DisplayText": "Glazenwasser",
+            "Id": 38
+        },
+        {
+            "DisplayText": "Inbraak",
+            "Id": 50
+        },
+        {
+            "DisplayText": "Intercom",
+            "Id": 31
+        },
+        {
+            "DisplayText": "Onbekende Aiuta",
+            "Id": 47
+        },
+        {
+            "DisplayText": "Onbekendesleutel",
+            "Id": 21
+        },
+        {
+            "DisplayText": "Onbekendmeldtype",
+            "Id": 20
+        },
+        {
+            "DisplayText": "Ontruiming",
+            "Id": 44
+        },
+        {
+            "DisplayText": "Oproep",
+            "Id": 1
+        },
+        {
+            "DisplayText": "Optiscan",
+            "Id": 29
+        },
+        {
+            "DisplayText": "Overval",
+            "Id": 36
+        },
+        {
+            "DisplayText": "Plug",
+            "Id": 23
+        },
+        {
+            "DisplayText": "Raamstand",
+            "Id": 34
+        },
+        {
+            "DisplayText": "Receptie",
+            "Id": 26
+        },
+        {
+            "DisplayText": "Wacht",
+            "Id": 12
+        },
+        {
+            "DisplayText": "Welzijn",
+            "Id": 24
+        },
+        {
+            "DisplayText": "Wind/regen",
+            "Id": 39
+        },
+        {
+            "DisplayText": "Zonnecel",
+            "Id": 37
+        }
+    ],
+    "Buttons": [
+        {
+            "ButtonCode": "1",
+            "CallTypeId": 29,
+            "Id": 2
+        }
+    ],
+    "LocationPassageses": [
+        {
+            "LocationDescription": "Kelder, bouwdeel A",
+            "PassTime": "2018-05-08T09:28:11.78"
+        },
+        {
+            "LocationDescription": "Kelder, bouwdeel A",
+            "PassTime": "2018-05-07T09:28:11.78"
+        },
+        {
+            "LocationDescription": "Kelder, bouwdeel A",
+            "PassTime": "2018-05-06T09:28:11.78"
+        },
+        {
+            "LocationDescription": "Kelder, bouwdeel A",
+            "PassTime": "2018-05-05T09:28:11.78"
+        }
+    ]
+}

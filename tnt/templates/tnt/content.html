@@ -1,0 +1,237 @@
+{#{% extends "tnt/base.html" %}#}
+{% load static %}
+
+{% block content %}
+    {% if page == "index" %}
+        <div class="bg-img"></div>
+        <div class="card-columns p-3">
+            <div class="card p-3 shadow">
+                <div class="card-body">
+                    <div class="input-group mb-3">
+                        <input id="search-input" class="form-control form-control-lg" type="text" placeholder="Voorwerp zoeken...">
+                        <div class="input-group-append">
+                            <button id="search-button" class="btn btn-primary" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="categories" class="btn btn-primary btn-lg btn-block">Categorieën</a>
+                    <a href="map/vitalis-vonderhof/-1" class="btn btn-primary btn-lg btn-block">Plattegrond</a>
+                </div>
+            </div>
+            <div class="card p-3 shadow">
+                <blockquote class="blockquote mb-0 card-body">
+                    <p>Welkom bij de vernieuwde testwebsite voor track&trace!</p>
+                    <p class="alert-warning">Let op: website is slechts conceptueel; sommige onderdelen zijn nog niet werkend of bevatten dummy data.</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                            Team Track&Trees
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+             <div class="card shadow">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Meest gezochte voorwerpen:
+                    </h5>
+                    <ul class="list-group list-group-flush">
+                        {% for product in products %}
+                            <li class="media">
+                                <img class="media-img mr-3" src={{ product.image.url }}>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">
+                                        <a href="{% url 'product' product.slug %}">
+                                            {{ product.manufacturer_short }} {{ product.product_family }} {{ product.product_model }}
+                                        </a>
+                                    </h5>
+                                    Aantal keren gezocht: #<br>
+                                    Categorie: {{ product.category.name }}
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Laatste activiteit:
+                    </h5>
+                    Niet beschikbaar
+                    <ul class="list-group list-group-flush">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="card text-center shadow">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Voorwerpen in magazijn
+                    </h5>
+                    <div id="donut-chart"></div>
+                </div>
+            </div>
+        </div>
+
+    {% elif page == "categories" %}
+        {% if categories %}
+            <div class="card-columns p-3">
+            {% for category in categories %}
+                <a class="card shadow category" href="{% url 'search' category.name %}">
+                    <img class="card-img-top p-5" src="{{ category.image.url }}" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{ category.name }}</h5>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>Geen resultaten.</p>
+        {% endif %}
+
+    {% elif page == "search" %}
+        {% if results %}
+            <div class="container">
+                <table id="results-table" class="table">
+                    <tbody>
+                        {% for result in results %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'product' result.slug %}">
+                                    <img class="table-image" src="{{ result.image.url }}">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{% url 'product' result.slug %}">
+                                    {{ result.manufacturer_short }} {{ result.product_family }} {{ result.product_model }}
+                                </a><br>
+                                {{ result.manufacturer_long }}
+                                <br>
+                                {{ result.category.name }}
+                            </td>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+                <br>
+                <h3 style="text-align:center">
+                    Geen zoekresultaten.
+                </h3>
+            {% endif %}
+    {% elif page == "products" %}
+        {% if products %}
+            <div class="container">
+                <table id="results-table" class="table">
+                    <tbody>
+                        {% for product in products %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'product' product.slug %}">
+                                    <img class="table-image" src="{{ product.image.url }}">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{% url 'product' product.slug %}">
+                                    {{ product.manufacturer_short }} {{ product.product_family }} {{ product.product_model }}
+                                </a><br>
+                                {{ product.manufacturer_long }}
+                                <br>
+                                {{ product.category.name }}
+                            </td>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+                <br>
+                <h3 style="text-align:center">
+                    Geen geregistreerde producten.
+                </h3>
+            {% endif %}
+
+    {% elif page == "product" %}
+        <br><h3>{{ product.manufacturer_short }} {{ product.product_family }} {{ product.product_model }}</h3><br>
+        <img class="table-image" src="{{ product.image.url }}"><br>
+        Producent: {{ product.manufacturer_long }}<br>
+        Productinformatie: <a href="{{ product.product_info_URL }}">{{ product.product_info_URL }}</a><br><br>
+        Trackers:<br>
+
+        {% for tracker in trackers %}
+            <a href={% url 'tracker' product.slug tracker.id %}>
+                {{ tracker.rf_device.code }}
+            </a>
+        {% endfor %}
+    {% elif page == "tracker" %}
+
+    {% elif page == "map" %}
+        <div id="map" class="container-fluid position-fixed"></div>
+		<div id="floor-dropdown" class="dropdown">
+			<button class="btn btn-primary btn-lg dropdown-toggle shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				{{ floor.name_text }}
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {% for ifloor in floordata %}
+                    <button class="dropdown-item" value={{ ifloor.number }}>{{ ifloor.name_text }}</button>
+                {% endfor %}
+		  </div>
+		</div>
+        <div id="" class="container float-xl-right" style="width:50vw">
+            <div class="row pb-3">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 id="floor-name" class="card-title">
+                                {{ floor.name_text }}
+                            </h5>
+                            <span id="floor-info">
+                                {{ floor.info_text }}
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg pb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Trackers
+                            </h5>
+                            {% for tracker in trackers %}
+                                <ul class="list-group list-group-flush">
+                                    <li class="media">
+                                        <img class="media-img mr-3" src={{ tracker.image.url }}>
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1">
+                                                <a href="{% url 'product' tracker.slug %}">
+                                                    {{ tracker.manufacturer_short }} {{ tracker.product_family }} {{ tracker.product_model }}
+                                                </a>
+                                            </h5>
+                                            Trackers: #
+                                        </div>
+                                    </li>
+                                </ul>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg pb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Geschiedenis
+                            </h5>
+                            Geen informatie beschikbaar.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% elif page == "stats" %}
+
+    {% elif page == "about" %}
+    {% endif %}
+{% endblock content %}

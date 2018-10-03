@@ -1,0 +1,109 @@
+.noscroll {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.navbar-logo {
+	width: 30px;
+}
+
+.navbar-toggler {
+	border: none;
+}
+
+.bg-img {
+	background-image: url("../img/magazijn.jpg");
+	width: 100vw;
+	height: 107vh;
+	top: -7vh;
+	position: fixed;
+	z-index:-1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+  	-o-filter: blur(2px);
+  	-ms-filter: blur(2px);
+  	filter: blur(2px);
+	transform: scale(1.01);
+
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 3;
+    }
+    .
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 4;
+    }
+
+}
+
+.media-img {
+	width: 64px;
+	height: 64px;
+}
+
+#donut-chart svg text {
+    font-family: Segoe UI !important;
+    font-weight: normal !important;
+    font-size: 6px !important;
+    }
+
+.category:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+#results-table {
+	padding: 5vh 40vw !important;
+}
+/*.card-div {*/
+	/*background-color: rgba(255, 255, 255, 0.5);*/
+	/*top: 50%;*/
+	/*width: 450px;*/
+	/**/
+	/*margin: 25px; */
+	/*padding: 20px;*/
+/*}*/
+
+/*.card-deck {*/
+  	/*@include media-breakpoint-only(lg) {*/
+    	/*column-count: 4;*/
+  	/*}*/
+  	/*@include media-breakpoint-only(xl) {*/
+    	/*column-count: 5;*/
+  	/*}*/
+/*}*/
+
+#map {
+	/*position: fixed;*/
+	/*width: 100vw;*/
+	height: 93vh;
+}
+
+#floor-dropdown {
+	top: 1vh;
+	left: 1vw;
+	width: 200px;
+	z-index: 1000;
+}
+
+.table-image {
+	height: 20vh;
+}

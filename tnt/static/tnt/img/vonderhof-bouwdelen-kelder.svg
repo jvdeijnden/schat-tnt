@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="91.103"
+   height="188.46"
+   version="1.1"
+   viewBox="0 0 91.103 188.46"
+   xml:space="preserve"
+   id="svg38"
+   sodipodi:docname="vonderhof-bouwdelen-kelder.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview40"
+     showgrid="false"
+     inkscape:zoom="3.5419122"
+     inkscape:cx="-56.864539"
+     inkscape:cy="101.92929"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg38" /><defs
+     id="defs8"><clipPath
+       id="d"><path
+         d="m327.93 287.02h-314.94v-277.01h314.94v277.01"
+         clip-rule="evenodd"
+         id="path2" /></clipPath><clipPath
+       id="c"><path
+         d="m327.93 287.02h-314.94v-277.01h314.94v277.01"
+         clip-rule="evenodd"
+         id="path5" /></clipPath></defs><g
+     transform="matrix(1.0158 -2.6464 2.6464 1.0158 -581.22 329.86)"
+     id="g34"><path
+       d="m152.82 163.81 0.41 1.445 4.588-1.342-0.022-1.549 3.807-1.109 1.556 5.273h-1.858v15.157h-1.48l-0.02-3.121-2.23 0.015 0.018 1.415-31.521 9.247-4.717-16.195 31.469-9.236"
+       fill="#ff090f"
+       fill-rule="evenodd"
+       id="path10"
+       style="fill:#ff9900;fill-opacity:1" /><path
+       d="m161.3 166.52h1.858l13.363-0.013 3.467-3e-3v-1e-3l8.563-8e-3v15.182h-27.251v-15.157"
+       fill="#2b31e5"
+       fill-rule="evenodd"
+       id="path12"
+       style="fill:#003049;fill-opacity:1" /><g
+       transform="rotate(69,141.19,175.81)"
+       id="g22"><g
+         clip-path="url(#d)"
+         id="g20"><g
+           transform="scale(.35278)"
+           id="g18"><text
+   transform="translate(393.73,505.32)"
+   fill="#ffffff"
+   font-family="Arial"
+   font-size="19.438px"
+   id="text16"><tspan
+     x="0"
+     y="0"
+     id="tspan14">A</tspan></text>
+
+
+</g></g></g><g
+       transform="rotate(69,174.67,174.52)"
+       id="g32"><g
+         clip-path="url(#c)"
+         id="g30"><g
+           transform="scale(.35278)"
+           id="g28"><text
+   transform="translate(488.44,501.66)"
+   fill="#ffffff"
+   font-family="Arial"
+   font-size="19.438px"
+   id="text26"><tspan
+     x="0"
+     y="0"
+     id="tspan24">B</tspan></text>
+
+
+</g></g></g></g><metadata
+     id="metadata36"><rdf:RDF><cc:Work
+         rdf:about=""><dc:title /><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata></svg>

@@ -1,0 +1,21 @@
+{% include 'tnt/head.html' %}
+{% include 'tnt/navbar.html' %}
+{% include 'tnt/content.html' %}
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+	<head>
+        {% block head %}
+        {% endblock head %}
+	</head>
+
+	<body>
+
+	{% block navbar %}
+	{% endblock navbar %}
+
+    {% block content %}
+    {% endblock content %}
+  </body>
+</html>
