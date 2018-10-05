@@ -1,0 +1,100 @@
+{% include 'tnt/navbar.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRACK&amp;TREES_menu_met_categorieën v2</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/css/-Filterable-Cards-.css">
+    <link rel="stylesheet" href="assets/css/Beautiful-Warning-Note-Callout.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/THANOS_fullscreen_image_with_text.css">
+    <link rel="stylesheet" href="assets/css/toastr.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+            integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+            crossorigin=""></script>
+</head>
+
+<body>
+{% block navbar %}
+{% endblock navbar %}
+
+<div class="table-responsive table-borderless" style="overflow: hidden">
+    <table class="table table-bordered">
+        <thead style="color:#212529;background-color:#dfe7f1;">
+        <tr>
+            <th class="float-left" colspan="2"><img src="{% static "jari/img/Bloeddrukmeter.png" %}"
+                                                    style="width:187px;height:188px;">&nbsp;Bloeddrukmeter
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody style="color:rgb(0,0,0);">
+        <tr>
+            <td class="d-table-cell float-left" rowspan="1" colspan="2" style="width:650px;height:650px;">
+                <div id="map_bloeddrukmeter"></div>&nbsp;
+            </td>
+            <td style="width:100%;margin-top:0px;margin-right:0px;margin-left:0px;">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color:#5aabe5;">
+                        <tr>
+                            <th style="width:309px;">Pin:</th>
+                            <th>Voorwerp:</th>
+                            <th>Huidige verdieping:</th>
+                            <th>Huidig bouwdeel:</th>
+                            <th>Meer info:</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><img src="{% static "jari/img/Pin_oranje.png" %}" id="Pin_1"></td>
+                            <td><p id="Bloeddrukmeter_1_text">Bloeddrukmeter_1</p>
+                            </td>
+                            <td>Begane grond</td>
+                            <td>A</td>
+                            <td>
+                                <div>
+                                    <a href="{% url "bloeddrukmeter_1" %}">
+                                        <img src="{% static "jari/img/info.png" %}" style="width:50px;height:50px;">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static "jari/img/Pin_groen.png" %}" id="Pin_2"></td>
+                            <td class="d-flex"><br>
+                                <p id="Bloeddrukmeter_2_text">Bloeddrukmeter_2</p></td>
+                            <td>Kelder</td>
+                            <td>B</td>
+                            <td>
+                                <div>
+                                    <a href="{% url "bloeddrukmeter_2" %}">
+                                        <img src="{% static "jari/img/info.png" %}" style="width:50px;height:50px;">
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

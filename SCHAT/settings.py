@@ -17,17 +17,20 @@ import django_heroku
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'landing', 'static'),
     os.path.join(BASE_DIR, 'tnt', 'static'),
+    os.path.join(BASE_DIR, 'jari', 'static'),
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, "deployment", "collected_static")
+STATIC_ROOT = os.path.join(BASE_DIR, "deployment", "static")
 MEDIA_ROOT = os.path.join(BASE_DIR, "deployment", "media")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
+# SECRET_KEY = os.getenv('SECRET_KEY', '')
+SECRET_KEY = '7=u*k21nn@28ik%d$&q+hj!ne2#+_@yd!3=nx)a@2m^a4h_bo%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,14 +41,32 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    # 'django.contrib.admin',
     'django_countries',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'landing',
     'tnt',
+    'jari',
+
+    'wagtail.contrib.forms',
+    'wagtail.contrib.redirects',
+    'wagtail.embeds',
+    'wagtail.sites',
+    'wagtail.users',
+    'wagtail.snippets',
+    'wagtail.documents',
+    'wagtail.images',
+    'wagtail.search',
+    'wagtail.admin',
+    'wagtail.core',
+
+    'modelcluster',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -56,6 +77,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'wagtail.core.middleware.SiteMiddleware',
+    'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
 
 ROOT_URLCONF = 'SCHAT.urls'
@@ -83,13 +107,22 @@ WSGI_APPLICATION = 'SCHAT.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'HOST': os.getenv('DB_HOST', 'Optional default value'),
+    #     'PORT': '5432',
+    #     'NAME': os.getenv('DB_NAME', 'Optional default value'),
+    #     'USER': os.getenv('DB_USER', 'Optional default value'),
+    #     'PASSWORD': os.getenv('DB_PASSWORD', 'Optional default value'),
+    #
+    # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': os.getenv('DB_HOST', 'Optional default value'),
+        'HOST': '127.0.0.1',
         'PORT': '5432',
-        'NAME': os.getenv('DB_NAME', 'Optional default value'),
-        'USER': os.getenv('DB_USER', 'Optional default value'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'Optional default value'),
+        'NAME': 'tnt',
+        'USER': 'tnt',
+        'PASSWORD': 'tnt1234',
 
     }
 }
@@ -134,4 +167,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-django_heroku.settings(locals())
+WAGTAIL_SITE_NAME = 'SCHAT Track&Trees'
+
+# SECURE_SSL_HOST = "https://schat-tnt.herokuapp.com"
+# SECURE_SSL_REDIRECT = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+
+# django_heroku.settings(locals())

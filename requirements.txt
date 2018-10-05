@@ -6,3 +6,4 @@ psycopg2
 simplejson
 gunicorn
 django-heroku
+wagtail

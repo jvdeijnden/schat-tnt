@@ -1,0 +1,60 @@
+{% load static %}
+
+{% block navbar %}
+    <nav class="navbar navbar-light navbar-expand-md" style="height:80px;background-color:#ffc9a2;">
+        <div class="container-fluid">
+            <a class="navbar-brand"
+               style="background-image:url(&quot;assets/img/Logo_trackTrees_notext.png&quot;);background-repeat:no-repeat;background-size:contain;height:68px;width:211px;margin:0px;margin-top:5px;background-position:top;">&nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav d-flex align-content-center" style="margin-left:32px;">
+                    <li class="nav-item d-flex" role="presentation" id="Nav-button" style="height:auto;">
+                        <a class="nav-link active justify-content-center" href="{% url 'help' %}" id="Help_link"
+                           style="height:80px;">
+                            <i style="margin-right: 5px;" class="fa fa-question-circle"></i>
+                            Help
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="{% url 'over' %}" id="Nav-button" style="height:80px;">
+                            <i style="margin-right: 5px;" class="fa fa-info-circle"></i>
+                            Over
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation" id="Nav-button-current">
+                        <a class="nav-link active" href="{% url 'admin' %}" id="Nav-button" style="height:80px;">
+                            <i style="margin-right: 5px;" class="fa fa-cog"></i>
+                            Admin
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="{% url 'meldingen' %}" id="Nav-button" style="height:80px;">
+                            <i style="margin-left: 3px; margin-right: 5px; position: relative;" class="fa fa-bell"
+                               id="badge"></i>
+                            Meldingen
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto" style="margin-left:32px;">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="{% url 'meetinstrumenten' %}"
+                           style="height:40px;width:40px;margin-top:-30px;">
+                            <a id="Previous_arrow" href="javascript:history.back()">
+                                <img src="{% static "jari/img/previous_arrow.svg" %}" style="width:60px;height:42px;">
+                            </a>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="{% url 'index' %}">
+                            <img src="{% static "jari/img/home.png" %}" style="width:40px;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock navbar %}
